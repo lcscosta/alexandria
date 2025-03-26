@@ -1,3 +1,3 @@
 # Alexandria
 
-The great library of Alexandria, self-hosted. 
+The great library of Alexandria, self-hosted.
