@@ -1,1 +1,9 @@
+# Python
 .venv/
+*.pyc
+
+# Next.js
+.next/
+
+# Npm
+node_modules/
