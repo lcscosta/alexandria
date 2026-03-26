@@ -6,7 +6,7 @@ export default function Home() {
   const [answer, setAnswer] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/")
+    fetch("/api/")
       .then((res) => res.json())
       .then((data) => setAnswer(data.Hello))
       .catch((error) => console.error("Error fetching data:", error));
