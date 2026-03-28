@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [answer, setAnswer] = useState(null);
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || "";
 
   useEffect(() => {
-    fetch("/api/")
+    fetch(`${apiUrl}`)
       .then((res) => res.json())
       .then((data) => setAnswer(data.Hello))
       .catch((error) => console.error("Error fetching data:", error));
